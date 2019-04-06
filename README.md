@@ -22,3 +22,12 @@ Ansible Handson Tutorial
     - Get the IP by going to terminal - ifconfig
     - Go to your Host machine
     - Use terminal for ssh to the IP of centos-template - ssh <username>@<ip-of-centos-template>
+
+- As we want to test this on multiple machine we need to clone the template machine, we will be having three machine - one master and two slave
+    - Close the centos-template machine which is running
+    - Right Click and Clone
+            - Expert Mode
+            - name it as ansible-controller
+            - select Generate new MAC address for all network adapters
+            - select Linked Clone
+    - Do the same steps for creating ansible-target1 and ansible-target2
