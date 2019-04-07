@@ -41,3 +41,8 @@ Ansible Handson Tutorial
         - save the file
         - restart the system so as these above changes are updated
         - Do the similar changes for other machine as well and make target1 and target2
+       
+- We need to install ansible on controller machine
+    - `sudo yum install ansible`
+    - To check whether ansible is installed properly `ansible --version`
+    
