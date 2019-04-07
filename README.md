@@ -31,3 +31,13 @@ Ansible Handson Tutorial
             - select Generate new MAC address for all network adapters
             - select Linked Clone
     - Do the same steps for creating ansible-target1 and ansible-target2
+    - We need to rename the three machine
+            - For ansible controller
+            - `sudo vi /etc/hostname`
+            - make it ansiblecontroller from osboxes
+            - save the file
+            - `sudo vi /etc/hosts`
+            - update the entry of 127.0.0.1 localhost ansiblecontroller and ::1 localhost ansiblecontroller
+            - save the file
+            - restart the system so as these above changes are updated
+            - Do the same changes for other machine as well
