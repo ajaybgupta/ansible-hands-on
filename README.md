@@ -40,4 +40,4 @@ Ansible Handson Tutorial
         - update the entry of 127.0.0.1 localhost ansiblecontroller and ::1 localhost ansiblecontroller
         - save the file
         - restart the system so as these above changes are updated
-        - Do the same changes for other machine as well
+        - Do the similar changes for other machine as well and make target1 and target2
