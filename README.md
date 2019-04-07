@@ -21,23 +21,23 @@ Ansible Handson Tutorial
     - Start the centos-template machine
     - Get the IP by going to terminal - ifconfig
     - Go to your Host machine
-    - Use terminal for ssh to the IP of centos-template - ssh <username>@<ip-of-centos-template>
+    - Use terminal for ssh to the IP of centos-template - `ssh <username>@<ip-of-centos-template>`
 
 - As we want to test this on multiple machine we need to clone the template machine, we will be having three machine - one master and two slave
     - Close the centos-template machine which is running
-    - Right Click and Clone
-            - Expert Mode
-            - name it as ansible-controller
-            - select Generate new MAC address for all network adapters
-            - select Linked Clone
+    - Right Click and Clone  
+        - Expert Mode
+        - name it as ansible-controller
+        - select Generate new MAC address for all network adapters
+        - select Linked Clone
     - Do the same steps for creating ansible-target1 and ansible-target2
-    - We need to rename the three machine
-            - For ansible controller
-            - `sudo vi /etc/hostname`
-            - make it ansiblecontroller from osboxes
-            - save the file
-            - `sudo vi /etc/hosts`
-            - update the entry of 127.0.0.1 localhost ansiblecontroller and ::1 localhost ansiblecontroller
-            - save the file
-            - restart the system so as these above changes are updated
-            - Do the same changes for other machine as well
+    - We need to rename the three machine  
+        - For ansible controller
+        - `sudo vi /etc/hostname`
+        - make it ansiblecontroller from osboxes
+        - save the file
+        - `sudo vi /etc/hosts`
+        - update the entry of 127.0.0.1 localhost ansiblecontroller and ::1 localhost ansiblecontroller
+        - save the file
+        - restart the system so as these above changes are updated
+        - Do the same changes for other machine as well
