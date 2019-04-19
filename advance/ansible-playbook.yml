@@ -63,7 +63,7 @@
     - name: Create Database user
       mysql_user:
         name: db_user
-        password: Passw0rd
+        password: @targ8et
         priv: '*.*:ALL'
         state: present
 
